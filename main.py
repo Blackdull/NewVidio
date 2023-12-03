@@ -164,7 +164,7 @@ def fungsiAuth(partner):
           f"Mohon tunggu beberapa waktu, sedang mencari SN dari {partner}!\n")
     while len(saveAuth) <= 0:
         threads = []
-        if proxyPrivate == "":
+        if proxyPrivate == "154.6.97.93:3128":
             for proxy in proxy_fixed[:num_proxy]:
                 thread = threading.Thread(
                     target=getAuth, args=(partner, proxy,))
